@@ -8,9 +8,190 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="guillermoab.posgrado.unam.mx.tarea1.MainActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+    <EditText
+        android:id="@+id/activitymain_txtdisplay"
+        android:textAlignment="textEnd"
+        android:maxLength="12"
+        android:inputType="numberDecimal"
+        android:enabled="false"
+        android:textSize="48dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_below="@+id/activitymain_txtdisplay"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/activitymain_btnmod"
+                android:layout_weight="1"
+                android:text="@string/mod"
+                android:textSize="27dp"
+                android:layout_width="match_parent"
+                android:layout_height="65dp" />
+            <Button
+                android:id="@+id/activitymain_btnbin"
+                android:layout_weight="1"
+                android:text="@string/binario"
+                android:textSize="27dp"
+                android:layout_width="match_parent"
+                android:layout_height="65dp" />
+            <Button
+                android:id="@+id/activitymain_btnC"
+                android:layout_weight="1"
+                android:textSize="27dp"
+                android:text="C"
+                android:layout_width="match_parent"
+                android:layout_height="65dp" />
+            <Button
+                android:id="@+id/activitymain_btndel"
+                android:layout_weight="1"
+                android:text="@string/del"
+                android:textSize="27dp"
+                android:layout_width="match_parent"
+                android:layout_height="65dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/activitymain_btn7"
+                android:layout_weight="1"
+                android:text="@string/siete"
+                android:textSize="48dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/activitymain_btn8"
+                android:layout_weight="1"
+                android:text="@string/ocho"
+                android:textSize="48dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/activitymain_btn9"
+                android:layout_weight="1"
+                android:text="@string/nueve"
+                android:textSize="48dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/activitymain_btndiv"
+                android:layout_weight="1"
+                android:text="@string/div"
+                android:textSize="48dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/activitymain_btn4"
+                android:layout_weight="1"
+                android:text="@string/cuatro"
+                android:textSize="48dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/activitymain_btn5"
+                android:layout_weight="1"
+                android:text="@string/cinco"
+                android:textSize="48dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/activitymain_btn6"
+                android:layout_weight="1"
+                android:text="@string/seis"
+                android:textSize="48dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/activitymain_btnpor"
+                android:layout_weight="1"
+                android:text="@string/por"
+                android:textSize="48dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/activitymain_btn1"
+                android:layout_weight="1"
+                android:text="@string/uno"
+                android:textSize="48dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/activitymain_btn2"
+                android:layout_weight="1"
+                android:text="@string/dos"
+                android:textSize="48dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/activitymain_btn3"
+                android:layout_weight="1"
+                android:text="@string/tres"
+                android:textSize="48dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/activitymain_btnmenos"
+                android:layout_weight="1"
+                android:text="@string/menos"
+                android:textSize="48dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/activitymain_btndot"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:text="@string/punto"
+            android:textSize="48dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/activitymain_btn0"
+            android:layout_weight="1"
+            android:text="@string/cero"
+            android:textSize="48dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/activitymain_btnigual"
+            android:layout_weight="1"
+            android:text="@string/igual"
+            android:textSize="48dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/activitymain_btnmas"
+            android:layout_weight="1"
+            android:text="@string/mas"
+            android:textSize="48dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    </LinearLayout>
 </RelativeLayout>
