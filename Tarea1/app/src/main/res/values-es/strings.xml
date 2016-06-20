@@ -20,4 +20,5 @@
     <string name="por">*</string>
     <string name="binario">bin</string>
     <string name="del">del</string>
+    <string name="clear">C</string>
 </resources>

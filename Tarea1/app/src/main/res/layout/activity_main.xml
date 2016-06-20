@@ -31,7 +31,7 @@
                 android:id="@+id/activitymain_btnmod"
                 android:layout_weight="1"
                 android:text="@string/mod"
-                android:textSize="27dp"
+                android:textSize="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="65dp" />
             <Button
@@ -45,7 +45,7 @@
                 android:id="@+id/activitymain_btnC"
                 android:layout_weight="1"
                 android:textSize="27dp"
-                android:text="C"
+                android:text="@string/clear"
                 android:layout_width="match_parent"
                 android:layout_height="65dp" />
             <Button
