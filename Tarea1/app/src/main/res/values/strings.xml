@@ -20,4 +20,8 @@
     <string name="binario">bin</string>
     <string name="del">del</string>
     <string name="clear">C</string>
+    <string name="another_number">You must enter another number!!!</string>
+    <string name="begin">You have reached the beginning!!!</string>
+    <string name="onedot">Can only be used once dot!!!</string>
+    <string name="nodivide">You can not divide by zero!!!</string>
 </resources>

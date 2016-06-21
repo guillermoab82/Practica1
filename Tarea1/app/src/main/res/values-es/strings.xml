@@ -21,4 +21,8 @@
     <string name="binario">bin</string>
     <string name="del">del</string>
     <string name="clear">C</string>
+    <string name="another_number">Se debe introducir otro número!!!</string>
+    <string name="begin">Has llegado al principio!!!</string>
+    <string name="onedot">Solo se puede usar el punto una vez!!!</string>
+    <string name="nodivide">No se puede dividir por cero!!!</string>
 </resources>

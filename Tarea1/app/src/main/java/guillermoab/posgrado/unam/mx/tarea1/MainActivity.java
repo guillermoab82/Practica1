@@ -1,7 +1,9 @@
 package guillermoab.posgrado.unam.mx.tarea1;
 
+import android.content.res.Resources;
 import android.os.CancellationSignal;
 import android.support.annotation.Nullable;
+import android.support.annotation.StringRes;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -92,7 +94,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             isMas=isDiv=isMenos=isMod=isPor=isDos=isDot=false;
                         }
                     }else{
-                        Toast.makeText(getApplicationContext(),"Se debe introducir otro número!!!",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(),R.string.another_number,Toast.LENGTH_SHORT).show();
                     }
                 break;
         }
@@ -177,7 +179,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
             display.setText(disp.substring(0,disp.length()-1));
         }else{
-            Toast.makeText(getApplicationContext(),"Has llegado al inicio!!!",Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(),R.string.begin,Toast.LENGTH_SHORT).show();
         }
     }
     public void ChooseOp(String strDisplay,int btnId){
@@ -242,7 +244,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if(!TextUtils.isEmpty(disp)){
             if(disp.indexOf(".")>=0) {
                 isDot=true;
-                Toast.makeText(getApplicationContext(),"Solo se puede usar el punto una vez!!",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),R.string.onedot,Toast.LENGTH_SHORT).show();
             }else{
                 if(isDot==false){
                     if(isPor==false && isMas==false && isMod==false && isMenos==false && isDiv==false) {
@@ -258,7 +260,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     }
                     isDot=true;
                 }else{
-                    Toast.makeText(getApplicationContext(),"Solo se puede usar el punto una vez!!",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),R.string.onedot,Toast.LENGTH_SHORT).show();
                 }
             }
         }else {
@@ -267,7 +269,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 display.setText(disp);
                 isDot=true;
             }else {
-                Toast.makeText(getApplicationContext(),"Solo se puede usar el punto una vez!!",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),R.string.onedot,Toast.LENGTH_SHORT).show();
             }
         }
     }
@@ -315,7 +317,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     resul=num1/num2;
                 }else{
                     resul=0;
-                    Toast.makeText(getApplicationContext(),"No se puede dividir por 0",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),R.string.nodivide,Toast.LENGTH_SHORT).show();
                 }
                 break;
             default:
