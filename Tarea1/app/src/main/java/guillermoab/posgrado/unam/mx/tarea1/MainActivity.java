@@ -47,41 +47,42 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
-            case R.id.activitymain_btn1:
-            case R.id.activitymain_btn2:
-            case R.id.activitymain_btn3:
-            case R.id.activitymain_btn4:
-            case R.id.activitymain_btn5:
-            case R.id.activitymain_btn6:
-            case R.id.activitymain_btn7:
-            case R.id.activitymain_btn8:
-            case R.id.activitymain_btn9:
-                WriteNumber(v.getId());
-                break;
-            case R.id.activitymain_btnbin:
-                IsBinEnabled();
-                break;
-            case R.id.activitymain_btnC:
-                reset();
-                break;
-            case R.id.activitymain_btndel:
-                DelLastStr(display.getText().toString());
-                break;
-            case R.id.activitymain_btndiv:
-            case R.id.activitymain_btnmas:
-            case R.id.activitymain_btnmenos:
-            case R.id.activitymain_btnmod:
-            case R.id.activitymain_btnpor:
-                ChooseOp(display.getText().toString(),v.getId());
-                break;
-            case R.id.activitymain_btndot:
-                PushDot(display.getText().toString(),v.getId());
-                break;
-            case R.id.activitymain_btn0:
-                WriteZero(display.getText().toString());
-                break;
-            case R.id.activitymain_btnigual:
+        try {
+            switch (v.getId()){
+                case R.id.activitymain_btn1:
+                case R.id.activitymain_btn2:
+                case R.id.activitymain_btn3:
+                case R.id.activitymain_btn4:
+                case R.id.activitymain_btn5:
+                case R.id.activitymain_btn6:
+                case R.id.activitymain_btn7:
+                case R.id.activitymain_btn8:
+                case R.id.activitymain_btn9:
+                    WriteNumber(v.getId());
+                    break;
+                case R.id.activitymain_btnbin:
+                    IsBinEnabled();
+                    break;
+                case R.id.activitymain_btnC:
+                    reset();
+                    break;
+                case R.id.activitymain_btndel:
+                    DelLastStr(display.getText().toString());
+                    break;
+                case R.id.activitymain_btndiv:
+                case R.id.activitymain_btnmas:
+                case R.id.activitymain_btnmenos:
+                case R.id.activitymain_btnmod:
+                case R.id.activitymain_btnpor:
+                    ChooseOp(display.getText().toString(),v.getId());
+                    break;
+                case R.id.activitymain_btndot:
+                    PushDot(display.getText().toString(),v.getId());
+                    break;
+                case R.id.activitymain_btn0:
+                    WriteZero(display.getText().toString());
+                    break;
+                case R.id.activitymain_btnigual:
                     if(isDos==true){
                         if(isBin==false){
                             b=Float.parseFloat(display.getText().toString());
@@ -96,7 +97,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     }else{
                         Toast.makeText(getApplicationContext(),R.string.another_number,Toast.LENGTH_SHORT).show();
                     }
-                break;
+                    break;
+            }
+        }catch (Exception e) {
+            Toast.makeText(getApplicationContext(),R.string.general_error,Toast.LENGTH_SHORT).show();
+            reset();
         }
     }
 

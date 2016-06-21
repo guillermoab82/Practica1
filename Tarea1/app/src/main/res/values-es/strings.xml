@@ -26,4 +26,5 @@
     <string name="begin">Has llegado al principio!!!</string>
     <string name="onedot">Solo se puede usar el punto una vez!!!</string>
     <string name="nodivide">No se puede dividir por cero!!!</string>
+    <string name="general_error">Ha ocurrido un error!!!</string>
 </resources>

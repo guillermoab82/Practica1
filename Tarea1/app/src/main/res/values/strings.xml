@@ -25,4 +25,5 @@
     <string name="begin">You have reached the beginning!!!</string>
     <string name="onedot">Can only be used once dot!!!</string>
     <string name="nodivide">You can not divide by zero!!!</string>
+    <string name="general_error">An error has occurred!!!</string>
 </resources>
