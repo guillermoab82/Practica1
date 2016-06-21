@@ -3,6 +3,6 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="btnfunction_height">65dp</dimen>
-    <dimen name="btnfunction_textSize">27sp</dimen>
-    <dimen name="btngeneric_textSize">48dp</dimen>
+    <dimen name="btnfunction_textSize">25sp</dimen>
+    <dimen name="btngeneric_textSize">48sp</dimen>
 </resources>

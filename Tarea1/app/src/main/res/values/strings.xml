@@ -18,6 +18,7 @@
     <string name="punto">.</string>
     <string name="por">*</string>
     <string name="binario">bin</string>
+    <string name="decimal">dec</string>
     <string name="del">del</string>
     <string name="clear">C</string>
     <string name="another_number">You must enter another number!!!</string>

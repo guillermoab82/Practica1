@@ -140,6 +140,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             findViewById(R.id.activitymain_btnmenos).setEnabled(false);
             findViewById(R.id.activitymain_btnmod).setEnabled(false);
             findViewById(R.id.activitymain_btnpor).setEnabled(false);
+            Button btn = (Button) findViewById(R.id.activitymain_btnbin);
+            btn.setText(R.string.decimal);
             isBin=true;
         }else {
             findViewById(R.id.activitymain_btn2).setEnabled(true);
@@ -155,6 +157,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             findViewById(R.id.activitymain_btnmenos).setEnabled(true);
             findViewById(R.id.activitymain_btnmod).setEnabled(true);
             findViewById(R.id.activitymain_btnpor).setEnabled(true);
+            Button btn = (Button) findViewById(R.id.activitymain_btnbin);
+            btn.setText(R.string.binario);
             isBin=false;
         }
         reset();
